@@ -1,12 +1,12 @@
 class Contact:
-    def _init_(self, name, phone, email, address):
+    def __init__(self, name, phone, email, address):
         self.name = name
         self.phone = phone
         self.email = email
         self.address = address
 
 class ContactManager:
-    def _init_(self):
+    def __init__(self):
         self.contacts = []
 
     def add_contact(self, name, phone, email, address):
@@ -94,5 +94,5 @@ def main():
         else:
             print("Invalid choice. Please choose a valid option.")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
